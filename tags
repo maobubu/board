@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Board	TicTacToeClasses.cpp	/^    Board()$/;"	f	class:Board
+Board	TicTacToeClasses.cpp	/^class Board$/;"	c	file:
+checkColumns	TicTacToeClasses.cpp	/^    char checkColumns()$/;"	f	class:Board
+checkDiagonals	TicTacToeClasses.cpp	/^    char checkDiagonals()$/;"	f	class:Board
+checkResponse	TicTacToeFunctions.cpp	/^void checkResponse(Board &boardIn, char input)$/;"	f
+checkRows	TicTacToeClasses.cpp	/^    char checkRows()$/;"	f	class:Board
+determineWinner	TicTacToeClasses.cpp	/^    char determineWinner()$/;"	f	class:Board
+getPositions	TicTacToeClasses.cpp	/^    char* getPositions(void)$/;"	f	class:Board
+getUserNames	TicTacToeFunctions.cpp	/^void getUserNames(string &userX, string &userY)$/;"	f
+getUserResponse	TicTacToeFunctions.cpp	/^int getUserResponse()$/;"	f
+main	main.cpp	/^int main()$/;"	f
+positionsSelected	TicTacToeClasses.cpp	/^    char positionsSelected[16];$/;"	m	class:Board	file:
+printBlankBoard	TicTacToeFunctions.cpp	/^void printBlankBoard()$/;"	f
+printGameWinner	TicTacToeFunctions.cpp	/^void printGameWinner(Board boardIn, string nameX, string nameO)$/;"	f
+printTheBoard	TicTacToeFunctions.cpp	/^void printTheBoard(Board boardIn)$/;"	f
+printUserPrompt	TicTacToeFunctions.cpp	/^void printUserPrompt(string nameIn, char letter)$/;"	f
+setPosition	TicTacToeClasses.cpp	/^    int setPosition(int gridNumber, char user)$/;"	f	class:Board
+winner	TicTacToeClasses.cpp	/^    char winner;$/;"	m	class:Board	file:
+writeTheBoard	TicTacToeFunctions.cpp	/^void writeTheBoard(Board boardIn)$/;"	f
