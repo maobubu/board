@@ -1,37 +1,18 @@
 /*The Class header file for main.cpp*/
-#include <stdio.h>
-#include <iostream>
-#include <cstring>
-#include <string>
-#include <fstream>
+#include "TicTacToeClasses.hpp"
 
-using namespace std;
-
-class Board
-{//the class tracks the game and the winner
-    char positionsSelected[16];
-    char winner;
-
-public:
-    /*This is another way of doing methods in classes.
-    Instead of listing the methods in the class,
-    Then defining them afterwards, the methods are
-    defined within the class definition.
-    The downside of this method is: it is not immediately
-    clear what methods are in the class.
-    */
-    Board():winner('z')
+Board::Board():winner('z')
     {//sets the board to blanks and the winner to 'z'
         //std::cout<<"Creating a board\n";
         for(int i = 0; i < 16; i++) positionsSelected[i] = '_';
     }
 
-    char* getPositions(void)
+char* Board::getPositions(void)
     {//return all the positions on the board
         return positionsSelected;
     }
 
-    int setPosition(int gridNumber, char user)
+int Board::setPosition(int gridNumber, char user)
     {//set a given position to x or o
         {
             if(positionsSelected[gridNumber] == '_')
@@ -44,7 +25,7 @@ public:
         return 0;
     }
 
-    char checkRows()
+char Board::checkRows()
     {//check the rows for a winner
         int rows = 0;
         int columns = 0;
@@ -77,7 +58,7 @@ public:
         return 'z';
     }
 
-    char checkColumns()
+char Board::checkColumns()
     {//check the columns for a winner
         int rows = 0;
         int columns = 0;
@@ -112,7 +93,7 @@ public:
         return 'z';
     }
 
-    char checkDiagonals()
+char Board::checkDiagonals()
     {//check the diagonals for a winner
         char winner = 'z';
         int fourInRowX = 0;
@@ -158,7 +139,7 @@ public:
         return winner;
     }
 
-    char determineWinner()
+char Board::determineWinner()
     {//if 4 in a row, then there is a winner
         char winner = 'z';
         winner =  checkRows();
@@ -168,7 +149,4 @@ public:
             winner = checkDiagonals();
         return winner;
     }
-
-};
-
 

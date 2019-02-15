@@ -3,8 +3,9 @@
 **play a 4x4 tic-tac-toe game.
 */
 
-#include "TicTacToeClasses.cpp"
-#include "TicTacToeFunctions.cpp"
+#include "TicTacToeClasses.hpp"
+#include "TicTacToeFunctions.hpp"
+
 
 
 int main()

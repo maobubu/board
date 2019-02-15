@@ -1,20 +1,4 @@
-/*Goal: Practice creating classes and functions.
-**Create a program that allows two users to
-**play a 4x4 tic-tac-toe game.
-*/
-
-#include <fstream>
-
-void getUserNames(string &, string &);
-void printBlankBoard(string);
-void printTheBoard(Board, string);
-void printUserPrompt(Board, string, char);
-void printGameWinner(Board, string, string);
-int  getUserResponse();
-void checkResponse(Board&, char);
-void writeTheBoard(Board);
-
-using namespace std;
+#include "TicTacToeFunctions.hpp"
 
 void checkResponse(Board &boardIn, char input)
 {   //take the reference because you want to change the object
